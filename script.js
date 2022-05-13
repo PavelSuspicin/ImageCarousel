@@ -1,7 +1,7 @@
 const imgs = document.getElementById('imgs')
+const img = document.querySelectorAll('#imgs img')
 const leftBtn = document.getElementById('left')
 const rightBtn = document.getElementById('right')
-const img = document.querySelectorAll('#imgs img')
 
 let ind = 0
 let interval = setInterval(run, 2000)
@@ -26,14 +26,14 @@ function resetInterval() {
     interval = setInterval(run, 2000)
 }
 
-rightBtn.addEventListener('click', () => {
-    ind++
-    changeImage()
-    resetInterval()
-})
-
 leftBtn.addEventListener('click', () => {
     ind--
-    changeImage()
     resetInterval()
+    changeImage()
+})
+
+rightBtn.addEventListener('click', () => {
+    ind++
+    resetInterval()
+    changeImage()
 })
