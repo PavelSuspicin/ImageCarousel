@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css"/>
-    <title></title>
-  </head>
-  <body>   
-      
-     <script src="script.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+            integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Image Carousel</title>
+    </head>
+    <body>
+        <div class="carousel">
+            <div class="image-container" id="imgs">
+                <img
+                    src="https://www.zastavki.com/pictures/1920x1200/2018Animals___Cats_Two_little_gray_kitten_in_green_grass_124732_18.jpg"
+                    alt="first-image"
+                />
+                <img src="https://images7.alphacoders.com/294/thumb-1920-294060.jpg" alt="second-image" />
+
+                <img src="https://wallbox.ru/wallpapers/main2/201705/trava-koski-kotata.jpg" alt="third-image" />
+                <img src="https://img.fonwall.ru/o/c8/kotenok-morda-glaza-golubye-ushi.jpg" alt="fourth-image" />
+            </div>
+            <div class="button-container">
+                <button id="left" class="btn">Prev</button>
+                <button id="right" class="btn">Next</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
 </html>
